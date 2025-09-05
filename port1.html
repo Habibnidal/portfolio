@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Habib Nidal - Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: url('https://images.unsplash.com/photo-1531297484001-80022131f5a1') no-repeat center center fixed;
+      background-size: cover;
+      color: #fff;
+    }
+
+    header {
+      background: rgba(0, 0, 0, 0.5);
+      backdrop-filter: blur(10px);
+      color: white;
+      padding: 2rem;
+      text-align: center;
+    }
+
+    header h1 { font-size: 3rem; margin-bottom: 0.5rem; }
+    header p { font-size: 1.2rem; }
+
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    section {
+      backdrop-filter: blur(15px);
+      background: rgba(255, 255, 255, 0.1);
+      color: #fff;
+      padding: 3rem 2rem;
+      max-width: 1000px;
+      margin: 2rem auto;
+      border-radius: 20px;
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.37);
+    }
+
+    h2 {
+      margin-bottom: 1rem;
+      font-size: 2rem;
+      color: #fff;
+      border-bottom: 1px solid rgba(255,255,255,0.3);
+      padding-bottom: 0.5rem;
+    }
+
+    .card {
+      background: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(15px);
+      border-radius: 16px;
+      padding: 1rem;
+      margin-bottom: 1rem;
+      box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    }
+
+    .projects img {
+      width: 100%;
+      border-radius: 10px;
+      margin-top: 1rem;
+    }
+
+    .skills, .certifications {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1rem;
+    }
+
+    .contact a {
+      display: block;
+      color: #00acee;
+      margin: 5px 0;
+      text-decoration: none;
+    }
+
+    footer {
+      background: rgba(0, 0, 0, 0.6);
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 2rem;
+    }
+
+    .socials img {
+      width: 30px;
+      margin: 0 10px;
+      vertical-align: middle;
+    }
+    .socials svg {
+        width: 30px;
+      margin: 0 10px;
+      vertical-align: middle;
+    }
+
+    #start {
+      background: rgba(255, 255, 255, 0.1);
+      color: #fff;
+      padding: 3rem 2rem;
+      text-align: center;
+      border-radius: 0 0 20px 20px;
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
+      max-width: 1000px;
+      margin: auto;
+      backdrop-filter: blur(15px);
+    }
+
+    /* About Section PNG style */
+    #about {
+      display: flex;
+      align-items: center;
+      gap: 2rem;
+      flex-wrap: wrap;
+    }
+
+    #about img {
+      max-width: 250px;
+      height: auto;
+    }
+
+    #about div {
+      flex: 1;
+    }
+
+    ul li {
+      margin-bottom: 0.7rem;
+    }
+    video {
+      width: 300px;
+      height: 200px;
+      border-radius: 25px; /* Curved rectangle */
+      display: block;
+      text-align: left;
+      box-shadow: 0 0 20px rgba(0,0,0,0.3);
+      
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Habib Nidal</h1>
+  <p>Computer Science Student | Python Fullstack Developer | Data Analyst</p>
+  <div class="socials">
+    <a href="mailto:habibnidal2003@gmail.com"><img src="https://img.icons8.com/color/48/gmail.png" alt="Gmail" /></a>
+    <a href="https://www.linkedin.com/in/habibnidal"><img src="https://img.icons8.com/color/48/linkedin.png" alt="LinkedIn" /></a>
+    <a href="https://github.com/Habibnidal" target="_blank" title="GitHub" style="display:inline-block;">
+  <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="white" viewBox="0 0 24 24" >
+    <path d="M12 .297c-6.63 0-12 5.373-12 12 0 
+    5.303 3.438 9.8 8.205 11.387.6.113.82-.258.82-.577 
+    0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61-.546-1.387-1.333-1.757-1.333-1.757-1.09-.745.084-.729.084-.729 
+    1.205.084 1.84 1.236 1.84 1.236 1.07 1.835 2.809 1.305 
+    3.495.998.108-.776.418-1.305.76-1.605-2.665-.3-5.467-1.334-5.467-5.93 
+    0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 
+    0 0 1.005-.322 3.3 1.23a11.52 11.52 0 0 1 3-.405c1.02.005 
+    2.045.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 
+    2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 
+    5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 
+    3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 
+    12.297c0-6.627-5.373-12-12-12"/>
+  </svg>
+</a>
+
+  </div>
+</header>
+
+<!-- Welcome Section (Dark Grey) -->
+<section id="start">
+  <h2>Welcome</h2>
+  <p>
+    Hello! I'm <strong>Habib Nidal</strong>, a passionate tech enthusiast. Explore my portfolio to learn about my skills, projects, and journey as a developer.
+  </p>
+</section>
+
+<!-- About Me with PNG Image -->
+<section id="about">
+  <img src="images/port2-removebg-preview.png" alt="My PNG"/>
+  <div>
+    <h2>About Me</h2>
+    <p>
+      I'm a passionate Computer Science student from Kerala with a deep interest in fullstack web development, software testing, and data analytics. I love contributing to innovative projects and aim to build robust and smart solutions.
+    </p>
+  </div>
+</section>
+
+<section id="education">
+  <h2>Education</h2>
+  <ul>
+    <li><strong>B.Tech - Computer Science</strong> | College of Engineering Trikaripur (2021–2025)</li>
+    <li><strong>HSE</strong> | St Michaels AIHSS Kannur (2019–2021)</li>
+    <li><strong>SSLC</strong> | St Michaels AIHSS Kannur (2019)</li>
+  </ul>
+</section>
+
+<section class="projects">
+  <h2>Projects</h2>
+  <div class="card">
+    <h3>College Space Parking Management System</h3>
+    <p>Developed using HTML, CSS, JS, PHP and MySQL. Handled frontend and presentation duties.</p>
+    <video id="myVideo" src="images/IMG_6118.MP4" autoplay muted loop controls></video>
+  </div>
+  <div class="card">
+    <h3>Wearable Emergency Alert System</h3>
+    <p>Uses Raspberry Pi, GPS, Microphone and Flutter frontend with Flask backend. Created for emergency live monitoring.</p>
+    <video id="myVideo" src="images/IMG_6009.mp4" autoplay muted loop controls></video>
+  </div>
+</section>
+
+<section id="skills">
+  <h2>Technical Skills</h2>
+  <div class="skills">
+    <div class="card"><strong>Languages:</strong> Python, C</div>
+    <div class="card"><strong>Web:</strong> HTML, CSS, Javascript (basic)</div>
+    <div class="card"><strong>Database:</strong> MySQL, SQLAlchemy,oracle</div>
+    <div class="card"><strong>Tools:</strong> VS Code, PyCharm, SQLplus, Canva</div>
+  </div>
+</section>
+
+<section id="certifications">
+  <h2>Certifications</h2>
+  <div class="certifications">
+    <div class="card">Data Mining - MES Perinthalmanna Techfest</div>
+    <div class="card">Temperature & Mask Scan System - National Techfest</div>
+    <div class="card">Volunteer - INQUA Techfest</div>
+    <div class="card">Volunteer - Reviens 4.0 IEEE</div>
+  </div>
+</section>
+
+<section class="contact">
+  <h2>Contact Me</h2>
+  <a href="mailto:habibnidal2003@gmail.com">📧 habibnidal2003@gmail.com</a>
+  <a href="tel:+917306020083">📞 7306020083</a>
+  <a href="https://www.linkedin.com/in/habibnidal">🔗 LinkedIn</a>
+  <a href="https://github.com/Habibnidal">💻 GitHub</a>
+</section>
+
+<footer>
+  <p>© 2025 Habib Nidal. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>
