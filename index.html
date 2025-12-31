@@ -225,6 +225,41 @@
     transform: scale(0.88);
     transform-origin: top left;
 }
+/* ========================= */
+/* RESPONSIVE ADD-ON ONLY */
+/* ========================= */
+
+.phone {
+    --scale: 1;
+    transform: scale(var(--scale));
+    transform-origin: top center;
+}
+
+/* Tablet */
+@media (max-width: 1024px) {
+    .phone {
+        --scale: 0.85;
+    }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    .phone-grid {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .phone {
+        --scale: 0.75;
+    }
+}
+
+/* Small Mobile */
+@media (max-width: 480px) {
+    .phone {
+        --scale: 0.6;
+    }
+}
 
   </style>
 </head>
