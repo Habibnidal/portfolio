@@ -175,6 +175,57 @@
       box-shadow: 0 0 20px rgba(0,0,0,0.3);
       
     }
+    .phone-grid {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 3rem;
+    flex-wrap: nowrap;
+}
+
+.phone {
+    width: 390px;       /* iPhone 14 width */
+    height: 700px;      /* iPhone 14 height */
+    background: #000;
+    border-radius: 44px;
+    padding: 14px;
+    position: relative;
+
+    box-shadow:
+        0 40px 80px rgba(0, 0, 0, 0.7),
+        inset 0 0 0 2px #1f2937;
+}
+
+.phone-notch {
+    position: absolute;
+    top: 6px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 150px;
+    height: 28px;
+    background: #000;
+    border-radius: 0 0 18px 18px;
+    z-index: 10;
+}
+
+.phone-screen {
+    width: 100%;
+    height: 100%;
+    border-radius: 32px;
+    overflow: hidden;
+    background: white;
+}
+
+/* MAGIC PART */
+.phone-screen iframe {
+    width: 430px;       /* render larger */
+    height: 930px;
+    border: none;
+
+    transform: scale(0.88);
+    transform-origin: top left;
+}
+
   </style>
 </head>
 <body>
@@ -213,6 +264,7 @@
     <a href="#skills">Skills</a>
     <a href="#certifications">Certifications</a>
     <a href="#contact">Contact</a>
+    <a href="#Explore">Explore</a>
     <a href="Habib_Nidal_Resume.pdf" download="Habib_Nidal_Resume.pdf">Resume</a>
   </div>
   </nav>
@@ -288,6 +340,39 @@
     <div class="card">Volunteer - INQUA Techfest<br><a href="IMG_6126.JPEG" target="_blank" download="images/IMG_6126.JPEG"style="color: black;"> Certificate</a></div>
     <div class="card">Volunteer - Reviens 4.0 IEEE<br><a href="IMG_6127.JPG" target="_blank" download="IMG_6127.JPG"style="color: black;">Certificate</a></div>
   </div>
+</section>
+
+<!-- IFRAME SECTION -->
+<section id="Explore">
+    <div class="container">
+        <h2 class="section-title">Explore</h2>
+
+        <div class="phone-grid">
+            <!-- PHONE 1 -->
+            <div class="phone">
+                <div class="phone-notch"></div>
+                <div class="phone-screen">
+                    <iframe
+                        src="https://digidress.onrender.com"
+                        title="Mobile App 1"
+                        loading="lazy">
+                    </iframe>
+                </div>
+            </div>
+
+            <!-- PHONE 2 -->
+            <div class="phone">
+                <div class="phone-notch"></div>
+                <div class="phone-screen">
+                    <iframe
+                        src="https://data-analysis-project-a59o.onrender.com/"
+                        title="Mobile App 2"
+                        loading="lazy">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </div>
 </section>
 
 <section id="contact" class="contact">
